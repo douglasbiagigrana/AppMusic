@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		A58F540D27E68A21002748C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F540C27E68A21002748C2 /* AppDelegate.swift */; };
 		A58F540F27E68A21002748C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F540E27E68A21002748C2 /* SceneDelegate.swift */; };
-		A58F541127E68A21002748C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F541027E68A21002748C2 /* ViewController.swift */; };
+		A58F541127E68A21002748C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F541027E68A21002748C2 /* HomeViewController.swift */; };
 		A58F541627E68A23002748C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A58F541527E68A23002748C2 /* Assets.xcassets */; };
 		A58F541927E68A23002748C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58F541727E68A23002748C2 /* LaunchScreen.storyboard */; };
+		A58F542227E7BCB6002748C2 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F542127E7BCB6002748C2 /* CardViewModel.swift */; };
+		A58F542727E7BD41002748C2 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F542427E7BD41002748C2 /* UIView + Extension.swift */; };
+		A58F542827E7BD41002748C2 /* NSTextAttachment + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F542527E7BD41002748C2 /* NSTextAttachment + Extension.swift */; };
+		A58F542927E7BD41002748C2 /* NSAttributedString + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F542627E7BD41002748C2 /* NSAttributedString + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A58F540927E68A21002748C2 /* AppMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58F540C27E68A21002748C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A58F540E27E68A21002748C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A58F541027E68A21002748C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A58F541027E68A21002748C2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A58F541527E68A23002748C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A58F541827E68A23002748C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A58F541A27E68A23002748C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A58F542127E7BCB6002748C2 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		A58F542427E7BD41002748C2 /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		A58F542527E7BD41002748C2 /* NSTextAttachment + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextAttachment + Extension.swift"; sourceTree = "<group>"; };
+		A58F542627E7BD41002748C2 /* NSAttributedString + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		A58F540B27E68A21002748C2 /* AppMusic */ = {
 			isa = PBXGroup;
 			children = (
+				A58F542327E7BD2A002748C2 /* Extension */,
+				A58F542027E7BCA8002748C2 /* Model */,
 				A58F540C27E68A21002748C2 /* AppDelegate.swift */,
 				A58F540E27E68A21002748C2 /* SceneDelegate.swift */,
-				A58F541027E68A21002748C2 /* ViewController.swift */,
+				A58F541027E68A21002748C2 /* HomeViewController.swift */,
 				A58F541527E68A23002748C2 /* Assets.xcassets */,
 				A58F541727E68A23002748C2 /* LaunchScreen.storyboard */,
 				A58F541A27E68A23002748C2 /* Info.plist */,
 			);
 			path = AppMusic;
+			sourceTree = "<group>";
+		};
+		A58F542027E7BCA8002748C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A58F542127E7BCB6002748C2 /* CardViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A58F542327E7BD2A002748C2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A58F542627E7BD41002748C2 /* NSAttributedString + Extension.swift */,
+				A58F542527E7BD41002748C2 /* NSTextAttachment + Extension.swift */,
+				A58F542427E7BD41002748C2 /* UIView + Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A58F541127E68A21002748C2 /* ViewController.swift in Sources */,
+				A58F542227E7BCB6002748C2 /* CardViewModel.swift in Sources */,
+				A58F541127E68A21002748C2 /* HomeViewController.swift in Sources */,
+				A58F542827E7BD41002748C2 /* NSTextAttachment + Extension.swift in Sources */,
 				A58F540D27E68A21002748C2 /* AppDelegate.swift in Sources */,
+				A58F542727E7BD41002748C2 /* UIView + Extension.swift in Sources */,
+				A58F542927E7BD41002748C2 /* NSAttributedString + Extension.swift in Sources */,
 				A58F540F27E68A21002748C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
