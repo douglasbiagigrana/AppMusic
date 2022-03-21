@@ -9,6 +9,7 @@ import UIKit
 
 extension UIView {
     
+    //seta tudo para 0
     func pin(to superView: UIView){
         self.translatesAutoresizingMaskIntoConstraints = false
         self.topAnchor.constraint(equalTo: superView.topAnchor).isActive = true
@@ -18,5 +19,3 @@ extension UIView {
     }
     
 }
-
-
